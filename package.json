@@ -1,0 +1,52 @@
+{
+  "name": "ssr-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env next dev",
+    "debugger": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "cross-env next build & chmod u+x ./copy.sh &&./copy.sh",
+    "start": "cross-env next start",
+    "lint": "next lint",
+    "lint:css": "stylelint pages/**/*.module.scss --fix"
+  },
+  "dependencies": {
+    "@douyinfe/semi-next": "^2.20.5",
+    "@douyinfe/semi-ui": "^2.20.5",
+    "@fingerprintjs/fingerprintjs": "^3.3.6",
+    "axios": "^1.1.2",
+    "classnames": "^2.3.2",
+    "cookies": "^0.8.0",
+    "cors": "^2.8.5",
+    "husky": "^8.0.1",
+    "lodash": "^4.17.21",
+    "next": "12.3.1",
+    "next-auth": "^4.13.0",
+    "next-connect": "^0.13.0",
+    "qs": "^6.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "showdown": "^2.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/cookies": "^0.7.7",
+    "@types/cors": "^2.8.12",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "cross-env": "^7.0.3",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "sass": "^1.55.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-scss": "^4.3.0",
+    "stylelint-webpack-plugin": "^3.3.0",
+    "typescript": "4.8.4",
+    "typescript-plugin-css-modules": "^3.4.0"
+  }
+}

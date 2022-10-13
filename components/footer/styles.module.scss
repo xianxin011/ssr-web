@@ -1,0 +1,88 @@
+.footer {
+    font-size: 1em;
+    padding: 4.375rem 9.0625rem;
+    background-color: var(--footer-background-color);
+    .topArea {
+      display: flex;
+      justify-content: space-between;
+  
+      .footerTitle {
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        color: var(--primary-color);
+        margin: 0;
+      }
+  
+      .linkListArea {
+        display: flex;
+        .linkArea {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10rem;
+          .title {
+            font-weight: 500;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 2.5rem;
+          }
+  
+          .links {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: .875rem;
+            line-height: 1.25rem;
+  
+            .link {
+              color: var(--primary-color);
+              cursor: pointer;
+              margin-bottom: 1.5rem;
+            }
+  
+            .disabled {
+              color: var(--secondary-color);
+              cursor: not-allowed;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  
+    .bottomArea {
+      display: flex;
+      justify-content: space-between;
+      .codeArea {
+        display: flex;
+        flex-direction: column;
+        .text {
+          color: var(--secondary-color);
+        }
+      }
+      .numArea {
+        color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.25rem;
+  
+        span {
+          margin-bottom: .75rem;
+        }
+  
+        .publicLogo {
+          display: flex;
+  
+          .logo {
+            margin-right: .25rem;
+          }
+        }
+      }
+    }
+  }
+
+  // !TODO 多端适配
